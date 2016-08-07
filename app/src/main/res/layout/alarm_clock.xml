@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgAlarm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/colonTxt"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/hourTxt"
+        android:layout_marginTop="70dp"
+        android:layout_toLeftOf="@id/colonTxt"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/minuteTxt"
+        android:layout_toRightOf="@id/colonTxt"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text=""
+        android:id="@+id/dateTxt"
+        android:layout_below="@+id/hourTxt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/addAlarmBtn"
+        android:layout_marginTop="155dp"
+        android:layout_below="@+id/dateTxt"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
