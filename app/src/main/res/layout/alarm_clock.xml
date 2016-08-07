@@ -2,52 +2,53 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgAlarm">
+    android:background="@drawable/bgalarm">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=":"
-        android:id="@+id/colonTxt"
-        android:layout_marginTop="70dp"
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="80dp"
+        android:id="@+id/colonImg"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/colon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="80dp"
+        android:id="@+id/digitTwoImg"
+        android:layout_marginTop="90dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="70dp"/>
+        android:layout_toLeftOf="@id/colonImg"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="00"
-        android:id="@+id/hourTxt"
-        android:layout_marginTop="70dp"
-        android:layout_toLeftOf="@id/colonTxt"
-        android:textSize="70dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="00"
-        android:id="@+id/minuteTxt"
-        android:layout_toRightOf="@id/colonTxt"
-        android:layout_marginTop="70dp"
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="80dp"
+        android:id="@+id/digitOneImg"
+        android:layout_marginTop="90dp"
         android:layout_alignParentTop="true"
-        android:textSize="70dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/digitTwoImg"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text=""
-        android:id="@+id/dateTxt"
-        android:layout_below="@+id/hourTxt"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="80dp"
+        android:id="@+id/digitThreeImg"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/colonImg"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/addAlarmBtn"
-        android:layout_marginTop="155dp"
-        android:layout_below="@+id/dateTxt"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="80dp"
+        android:id="@+id/digitFourImg"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/digitThreeImg"/>
 </RelativeLayout>
